@@ -8,7 +8,210 @@
     <author>
       <name>Chen</name>
     </author>
-    <updated>2023-04-02T12:24:38.286Z</updated>
+    <updated>2023-04-03T08:48:00.000Z</updated>
+    <entry>
+        <id>http://example.com/2023/04/03/Vue/</id>
+        <title>Vue</title>
+        <link rel="alternate" href="http://example.com/2023/04/03/Vue/"/>
+        <content type="html">&lt;h1 id=&#34;常用指令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用指令&#34;&gt;#&lt;/a&gt; 常用指令&lt;/h1&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;!--&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;&amp;lt;!--swig￼0--&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt; --&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;插值&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;bind--		数据绑定:		    v-bind				   		:被绑定对象=”&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;model--		双向数据绑定：	  	  v-model (默认值为value)		 v-model=&#34;&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;on--		点击事件绑定：	      v-on:click=&#34;&#34;     		    @click=&#34;&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;if/show      显示标签			v-if=&#34;布尔值&#34; / v-show=&#34;表达式&#34;		if--&gt;删除  show--&gt;隐藏&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;v-for       循环列表渲染		   v-for=&#34;(value,index) in/of 数组/对象 &#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;v-text      插入文本--替换控件文本 &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;v-text&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;name&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;	  --不支持结构解析&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;v-html      插入文本	&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;v-html&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&amp;lt;h1&gt;内容&amp;lt;/h1&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;	--支持内容解析&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;v-cloak     隐藏未加载数据的符号  隐藏符号搭配style&amp;#123;[cloak]&amp;#123;display:none&amp;#125;&amp;#125;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;h2&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;v-cloak&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token comment&#34;&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;h2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;v-once 		初始渲染后变为静态资源，显示初始值（标签内） &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;h2&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;v-once&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token comment&#34;&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;h2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;v-pre 		跳过不解析后面的内容（标签内）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- v-bind  标签内    数据流动单向 --data 流入页面   --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;&lt;span class=&#34;token namespace&#34;&gt;v-bind:&lt;/span&gt;href&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;:href&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- v-model 标签内    数据流动双向 -- 默认值为 value  --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;&lt;span class=&#34;token namespace&#34;&gt;v-model:&lt;/span&gt;href&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;text&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;&lt;span class=&#34;token namespace&#34;&gt;v-model:&lt;/span&gt;value&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;text&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;v-model&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- v-on:click=&#34; &#34;     点击事件 --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;&lt;span class=&#34;token namespace&#34;&gt;v-on:&lt;/span&gt;click&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;add(函数)&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;   &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;@click&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;add&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; methods:&amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;           add:function()&amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;           this.num += 5&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &amp;#125;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		  add2(x)&amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		 &amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <updated>2023-04-03T08:48:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/04/03/second/</id>
+        <title>second</title>
+        <link rel="alternate" href="http://example.com/2023/04/03/second/"/>
+        <content type="html">&lt;h1 id=&#34;z计算机组成与体系结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#z计算机组成与体系结构&#34;&gt;#&lt;/a&gt; z 计算机组成与体系结构&lt;/h1&gt;
+&lt;h2 id=&#34;进制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进制&#34;&gt;#&lt;/a&gt; 进制&lt;/h2&gt;
+&lt;h3 id=&#34;1r进制转十进制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1r进制转十进制&#34;&gt;#&lt;/a&gt; ①	R 进制转十进制&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322145127870.png&#34; alt=&#34;image-20230322145127870&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;​	R 进制转为十进制，底数为 Rz&lt;/p&gt;
+&lt;h3 id=&#34;2-十进制转r进制-短除法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-十进制转r进制-短除法&#34;&gt;#&lt;/a&gt; ② 十进制转 R 进制 -- 短除法&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322150036855.png&#34; alt=&#34;image-20230322150036855&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;​	R 为待转进制数&lt;/p&gt;
+&lt;h3 id=&#34;3-二进制转八进制和十六进制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-二进制转八进制和十六进制&#34;&gt;#&lt;/a&gt; ③ 二进制转八进制和十六进制&lt;/h3&gt;
+&lt;p&gt;​	（1）二进制转八进制，三位为一单位&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322150640826.png&#34; alt=&#34;image-20230322150640826&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;​	（2）二进制转十六进制，四位为一单位，10 开始使用 A 为一个数字为进行代表，A:10，B:11, C:12, D:13, E:14, F:15&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322150750112.png&#34; alt=&#34;image-20230322150750112&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;​	④十六进制：&lt;/p&gt;
+&lt;p&gt;​		加法：&lt;/p&gt;
+&lt;p&gt;​		减法：&lt;/p&gt;
+&lt;p&gt;​		乘法：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230324112607453.png&#34; alt=&#34;image-20230324112607453&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;​		除法：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230324113653670.png&#34; alt=&#34;image-20230324113653670&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;浮点数运算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#浮点数运算&#34;&gt;#&lt;/a&gt; 浮点数运算&lt;/h2&gt;
+&lt;p&gt;浮点数能表示的数的范围由阶码（e）的位数决定，精度由尾数的位数决定。&lt;/p&gt;
+&lt;p&gt;数符：正为 0   负为 1&lt;/p&gt;
+&lt;p&gt;阶符：在转换时候出现 n 的正负 依然遵循 正 0 负 1 的规律&lt;/p&gt;
+&lt;p&gt;阶码：次方数&lt;/p&gt;
+&lt;p&gt;尾数：小数点后的数&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230326194656210.png&#34; alt=&#34;image-20230326194656210&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;编码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编码&#34;&gt;#&lt;/a&gt; 编码&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322151910323.png&#34; alt=&#34;image-20230322151910323&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322154312239.png&#34; alt=&#34;image-20230322154312239&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230327170115875.png&#34; alt=&#34;image-20230327170115875&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1原码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1原码&#34;&gt;#&lt;/a&gt; ①原码&lt;/h3&gt;
+&lt;p&gt;​		转为二进制，不足 8 为补 0，最高位为符号位。(1)-&amp;gt;00000001&lt;/p&gt;
+&lt;p&gt;​		1 为负，0 为正；	(-1)-&amp;gt;100000001	    (1-1)-&amp;gt;(1+(-1))-&amp;gt;100000010-&amp;gt;-2&lt;/p&gt;
+&lt;h3 id=&#34;2反码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2反码&#34;&gt;#&lt;/a&gt; ②反码&lt;/h3&gt;
+&lt;p&gt;​		正数和原码相同； 负数符号位不变其余取反，运算后除了符号位其余取反则位原码值&lt;/p&gt;
+&lt;p&gt;​		正：(00000001)-&amp;gt;(000000001)		负：(100000001)-&amp;gt;(11111110)&lt;/p&gt;
+&lt;p&gt;​		（1-1）-&amp;gt;(111111111)-&amp;gt;(10000000)-&amp;gt;-0&lt;/p&gt;
+&lt;h3 id=&#34;3补码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3补码&#34;&gt;#&lt;/a&gt; ③补码&lt;/h3&gt;
+&lt;p&gt;​		正数&lt;mark&gt;反码&lt;/mark&gt;原码&lt;/p&gt;
+&lt;p&gt;​		负数：==  反码 + 1&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;h3 id=&#34;4移码浮点运算的接码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4移码浮点运算的接码&#34;&gt;#&lt;/a&gt; ④移码（浮点运算的接码）&lt;/h3&gt;
+&lt;p&gt;​		移码 == 补码的首位取反&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;计算机结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算机结构&#34;&gt;#&lt;/a&gt; 计算机结构&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322155550576.png&#34; alt=&#34;image-20230322155550576&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;cisc-与-risc&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cisc-与-risc&#34;&gt;#&lt;/a&gt; CISC 与 RISC&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322161821449.png&#34; alt=&#34;image-20230322161821449&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;流水线&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#流水线&#34;&gt;#&lt;/a&gt; 流水线&lt;/h3&gt;
+&lt;p&gt;​		流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分进行工作，以提高各部件的利用率和指令的平均执行速度&lt;/p&gt;
+&lt;h4 id=&#34;流水线周期-执行时间计算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#流水线周期-执行时间计算&#34;&gt;#&lt;/a&gt; 流水线周期、执行时间计算&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322164946243.png&#34; alt=&#34;image-20230322164946243&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322172213498.png&#34; alt=&#34;image-20230322172213498&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;​	解：	流水线周期：2ns&lt;/p&gt;
+&lt;p&gt;​			   100 条指令全部执行完毕需要的事件为：&lt;/p&gt;
+&lt;p&gt;​				①理论公式：（2+2+1）+（100-1）*2=203&lt;/p&gt;
+&lt;p&gt;​				②实践公式：（3+100-1）*2=204&lt;/p&gt;
+&lt;h4 id=&#34;流水线吞吐量计算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#流水线吞吐量计算&#34;&gt;#&lt;/a&gt; 流水线吞吐量计算&lt;/h4&gt;
+&lt;p&gt;​	吞吐率 TP：单位时间内流水线所完成的任务数量或输出的结构数量&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322190451426.png&#34; alt=&#34;image-20230322190451426&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;​	流水线最大吞吐率：1 / 周期时间&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322190733287.png&#34; alt=&#34;image-20230322190733287&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;流水线的加速比计算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#流水线的加速比计算&#34;&gt;#&lt;/a&gt; 流水线的加速比计算&lt;/h4&gt;
+&lt;p&gt;​					&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322191241488.png&#34; alt=&#34;image-20230322191241488&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;流水线的效率计算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#流水线的效率计算&#34;&gt;#&lt;/a&gt; 流水线的效率计算&lt;/h4&gt;
+&lt;h4 id=&#34;image-20230322191345872&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#image-20230322191345872&#34;&gt;#&lt;/a&gt; &lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322191345872.png&#34; alt=&#34;image-20230322191345872&#34; /&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322194042204.png&#34; alt=&#34;image-20230322194042204&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;cache&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cache&#34;&gt;#&lt;/a&gt; Cache&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322222752470.png&#34; alt=&#34;image-20230322222752470&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;层次化存储结构&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322222831226.png&#34; alt=&#34;image-20230322222831226&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230322222935258.png&#34; alt=&#34;image-20230322222935258&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;主存&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主存&#34;&gt;#&lt;/a&gt; 主存&lt;/h3&gt;
+&lt;h4 id=&#34;随机存取存储器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#随机存取存储器&#34;&gt;#&lt;/a&gt; 随机存取存储器&lt;/h4&gt;
+&lt;p&gt;①DRAM	(Dynamic RAM, 动态 RAM) - SDRAM&lt;/p&gt;
+&lt;p&gt;②SRAM	(Static RAM, 静态)&lt;/p&gt;
+&lt;h4 id=&#34;只读存储器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#只读存储器&#34;&gt;#&lt;/a&gt; 只读存储器&lt;/h4&gt;
+&lt;p&gt;①MROM	(Mask ROM,	掩护式 ROM)&lt;/p&gt;
+&lt;p&gt;②PROM	(Programmable ROM,	一次可编程 ROM)&lt;/p&gt;
+&lt;p&gt;③EROM	(Erasable PROM,	可擦除的 PROM)&lt;/p&gt;
+&lt;p&gt;④闪速存储器	(flash memory,	闪存)&lt;/p&gt;
+&lt;h4 id=&#34;编址&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编址&#34;&gt;#&lt;/a&gt; 编址&lt;/h4&gt;
+&lt;p&gt;* 地址单元 = 大内存地址 - 小内存地址 + 1&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230324232208904.png&#34; alt=&#34;image-20230324232208904&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230324210848107.png&#34; alt=&#34;image-20230324210848107&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;磁盘&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#磁盘&#34;&gt;#&lt;/a&gt; 磁盘&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230323223902279.png&#34; alt=&#34;image-20230323223902279&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;例题：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230323225828855.png&#34; alt=&#34;image-20230323225828855&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230323230159303.png&#34; alt=&#34;image-20230323230159303&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;总线&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#总线&#34;&gt;#&lt;/a&gt; 总线&lt;/h3&gt;
+&lt;p&gt;（1）内部总线&lt;/p&gt;
+&lt;p&gt;（2）系统总线&lt;/p&gt;
+&lt;p&gt;​		①数据总线	②地址总线	③控制总线&lt;/p&gt;
+&lt;p&gt;（3）外部总线&lt;/p&gt;
+&lt;h3 id=&#34;系统可靠性分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#系统可靠性分析&#34;&gt;#&lt;/a&gt; 系统可靠性分析&lt;/h3&gt;
+&lt;p&gt;考察：计算&lt;/p&gt;
+&lt;p&gt;例题：串联中存在并联，串联位为主体&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230324234143873.png&#34; alt=&#34;image-20230324234143873&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id=&#34;串联系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#串联系统&#34;&gt;#&lt;/a&gt; 串联系统&lt;/h4&gt;
+&lt;p&gt;​		可靠度：R=R1xR2xR3xR4xR5x...xRn&lt;/p&gt;
+&lt;p&gt;​		失效率：λ=λ1+λ2+λ3+λ4+λ5+...+λn&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230324232004292.png&#34; alt=&#34;image-20230324232004292&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id=&#34;并联系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#并联系统&#34;&gt;#&lt;/a&gt; 并联系统&lt;/h4&gt;
+&lt;p&gt;​		可靠度（1 - 失效率）：R=1-(1-R1) x (1-R2) x (1-R3) x (1-R4) x (1-R5) x...x (1-Rn)&lt;/p&gt;
+&lt;p&gt;​		失效率：1 - 可靠度&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230324233124280.png&#34; alt=&#34;image-20230324233124280&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id=&#34;n模冗余系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#n模冗余系统&#34;&gt;#&lt;/a&gt; n 模冗余系统&lt;/h4&gt;
+&lt;p&gt;（少考）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230324233824473.png&#34; alt=&#34;image-20230324233824473&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;差错控制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#差错控制&#34;&gt;#&lt;/a&gt; 差错控制&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230324235804309.png&#34; alt=&#34;image-20230324235804309&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;crc循环校验码-只能检错&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#crc循环校验码-只能检错&#34;&gt;#&lt;/a&gt; CRC 循环校验码 -- 只能检错&lt;/h4&gt;
+&lt;p&gt;模 2 除法（异或操作 ）-- 双 1 为 0，1-0 为 1，0-1 为 1，补 0 为被除数 - 1 位&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230325002415876.png&#34; alt=&#34;image-20230325002415876&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230325002520222.png&#34; alt=&#34;image-20230325002519540&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;海明校验码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#海明校验码&#34;&gt;#&lt;/a&gt; 海明校验码&lt;/h4&gt;
+&lt;p&gt;（1）确定校验位为多少位 (r)，&amp;gt;=n+r+1&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230326004248656.png&#34; alt=&#34;image-20230326004248656&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;（2）校验码放的位置为 2 的次方&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230326004355944.png&#34; alt=&#34;image-20230326004355944&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;例题：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230326004446123.png&#34; alt=&#34;image-20230326004446123&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id=&#34;操作系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统&#34;&gt;#&lt;/a&gt; 操作系统&lt;/h1&gt;
+&lt;h2 id=&#34;进程管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程管理&#34;&gt;#&lt;/a&gt; 进程管理&lt;/h2&gt;
+&lt;h3 id=&#34;进程的状态&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程的状态&#34;&gt;#&lt;/a&gt; 进程的状态&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86.png&#34; alt=&#34;image-20230329142047570&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;前趋图&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前趋图&#34;&gt;#&lt;/a&gt; 前趋图&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230329143056830.png&#34; alt=&#34;image-20230329143056830&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;pv操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pv操作&#34;&gt;#&lt;/a&gt; PV 操作&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230329151040384.png&#34; alt=&#34;image-20230329151040384&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;p 操作 == 自 - 1&lt;/p&gt;
+&lt;p&gt;​			当判断为 True 时被阻塞放入到进程队列等待&lt;/p&gt;
+&lt;p&gt;​			当判断为 False 时则继续进行下去&lt;/p&gt;
+&lt;p&gt;v 操作 == 自 + 1&lt;/p&gt;
+&lt;p&gt;​			当判断为 True 时被阻塞放入到进程队列等待&lt;/p&gt;
+&lt;p&gt;​			当判断为 False 时则继续进行下去&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230329153254055.png&#34; alt=&#34;image-20230329153254055&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;习题&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230329164111459.png&#34; alt=&#34;image-20230329164111459&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230329164129339.png&#34; alt=&#34;image-20230329164129339&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;C	A	A&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230329164156294.png&#34; alt=&#34;image-20230329164156294&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;死锁问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#死锁问题&#34;&gt;#&lt;/a&gt; 死锁问题&lt;/h3&gt;
+&lt;p&gt;至少资源计算：（n (需求)-1）x k (进程数)+1&lt;/p&gt;
+&lt;p&gt;死锁的预防：打破四大条件：&lt;/p&gt;
+&lt;p&gt;​						互斥、保持和等待、不剥夺、环路等待&lt;/p&gt;
+&lt;p&gt;死锁的避免：有序资源分配法、银行家算法&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;存储管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#存储管理&#34;&gt;#&lt;/a&gt; 存储管理&lt;/h2&gt;
+&lt;h3 id=&#34;分区存储组织&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分区存储组织&#34;&gt;#&lt;/a&gt; 分区存储组织&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230329185415029.png&#34; alt=&#34;image-20230329185415029&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;页式存储组织&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#页式存储组织&#34;&gt;#&lt;/a&gt; 页式存储组织&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230329234456158.png&#34; alt=&#34;image-20230329234456158&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;练习：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230329235523601.png&#34; alt=&#34;image-20230329235523601&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230330001023816.png&#34; alt=&#34;image-20230330001023816&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;段式存储组织逻辑结构划分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#段式存储组织逻辑结构划分&#34;&gt;#&lt;/a&gt; 段式存储组织（逻辑结构划分）&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230331233316182.png&#34; alt=&#34;image-20230331233316182&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;段页存储组织&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#段页存储组织&#34;&gt;#&lt;/a&gt; 段页存储组织&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230331233651221.png&#34; alt=&#34;image-20230331233651221&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;快表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#快表&#34;&gt;#&lt;/a&gt; 快表&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230331233758309.png&#34; alt=&#34;image-20230331233758309&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;页面置换算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#页面置换算法&#34;&gt;#&lt;/a&gt; 页面置换算法&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://chen-1317386995.cos.ap-guangzhou.myqcloud.com/Typro/exam/image-20230331233928223.png&#34; alt=&#34;image-20230331233928223&#34; /&gt;&lt;/p&gt;
+</content>
+        <updated>2023-04-03T08:41:56.000Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2023/04/02/hello-world/</id>
         <title>Hello World</title>
